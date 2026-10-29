@@ -1,62 +1,155 @@
 .release-section {
-  padding: 4rem 2rem;
-  background-color: var(--bg-primary);
+  padding: 5.6rem 2.25rem 6rem;
+  background: var(--white);
 }
 
 .release-container {
-  max-width: 700px;
+  max-width: 1060px;
   margin: 0 auto;
-  text-align: center;
-  padding: 3rem 2rem;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
 }
 
-.release-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  letter-spacing: -0.02em;
+.release-heading {
+  max-width: 680px;
+}
+
+.release-title,
+.faq-section h2,
+.community-title {
+  margin: 0.85rem 0 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.13;
 }
 
 .release-description {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  margin-bottom: 1.75rem;
-  line-height: 1.8;
-}
-
-.release-button {
-  display: inline-block;
-  background-color: var(--discord);
-  color: white;
-  text-decoration: none;
-  padding: 0.75rem 1.75rem;
-  border-radius: 6px;
+  max-width: 600px;
+  margin: 1rem 0 0;
+  color: var(--muted);
   font-size: 1rem;
+  line-height: 1.75;
+}
+
+.release-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 2.7rem 0 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.release-fact {
+  min-width: 0;
+  padding: 1.25rem 1.5rem 1.35rem 0;
+}
+
+.release-fact + .release-fact {
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--line);
+}
+
+.release-fact dt {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.release-fact dd {
+  margin: 0.45rem 0 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.08rem;
   font-weight: 600;
-  transition: background-color 0.2s ease;
+  line-height: 1.45;
 }
 
-.release-button:hover {
-  background-color: var(--discord-hover);
+.faq-section {
+  padding-top: 5rem;
+  scroll-margin-top: 90px;
 }
 
-@media (max-width: 768px) {
+.faq-section h2 {
+  margin-top: 0.7rem;
+  font-size: 2.15rem;
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.faq-item {
+  padding-top: 1rem;
+  border-top: 2px solid var(--acid);
+}
+
+.faq-item h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.faq-item p {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.release-link {
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--coral);
+  padding-bottom: 0.25rem;
+}
+
+@media (max-width: 720px) {
   .release-section {
-    padding: 3rem 1.5rem;
-  }
-
-  .release-container {
-    padding: 2rem 1.5rem;
+    padding: 4rem 1.5rem 4.5rem;
   }
 
   .release-title {
-    font-size: 1.75rem;
+    font-size: 2.3rem;
   }
 
-  .release-description {
-    font-size: 1rem;
+  .faq-list {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .faq-section {
+    padding-top: 3.75rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .release-section {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+
+  .release-title {
+    font-size: 2rem;
+  }
+
+  .release-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .release-fact,
+  .release-fact + .release-fact {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .release-fact:last-child {
+    border-bottom: 0;
   }
 }

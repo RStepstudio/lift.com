@@ -1,65 +1,89 @@
 .community-section {
-  padding: 4rem 2rem;
-  background-color: var(--bg-secondary);
+  position: relative;
+  padding: 5rem 2rem 5.2rem;
+  overflow: hidden;
+  background: linear-gradient(115deg, #1d2922, var(--dark) 64%);
+  color: var(--white);
+}
+
+.community-section::before {
+  position: absolute;
+  top: 0;
+  left: max(calc((100vw - 1060px) / 2), 2rem);
+  width: 84px;
+  height: 3px;
+  background: var(--coral);
+  content: '';
 }
 
 .community-container {
-  max-width: 700px;
+  position: relative;
+  max-width: 720px;
   margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .community-icon {
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  aspect-ratio: 1;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--dark-line);
+  border-radius: 50%;
+  color: var(--acid);
+}
+
+.community-container .section-index {
+  color: #aab6ab;
 }
 
 .community-title {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  margin-top: 0.2rem;
+  color: var(--white);
+  font-size: 2.8rem;
 }
 
 .community-description {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  max-width: 500px;
-  line-height: 1.8;
+  max-width: 490px;
+  margin: 0.25rem 0 0;
+  color: #b7c1b9;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .community-button {
-  display: inline-block;
-  background-color: var(--discord);
-  color: white;
-  text-decoration: none;
-  padding: 0.75rem 1.75rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
+  border-color: var(--acid);
+  background: var(--acid);
+  color: var(--dark);
 }
 
 .community-button:hover {
-  background-color: var(--discord-hover);
+  border-color: var(--white);
+  background: var(--white);
 }
 
-@media (max-width: 768px) {
+.community-url {
+  color: #96a39a;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 620px) {
   .community-section {
-    padding: 3rem 1.5rem;
+    padding: 4rem 1.25rem;
   }
 
   .community-title {
-    font-size: 1.75rem;
+    font-size: 2.2rem;
   }
 
   .community-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }

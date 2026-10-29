@@ -16,8 +16,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <a href="#home" className="nav-logo" onClick={closeMenu}>
-          RBXLift
+        <a href="#home" className="nav-logo" onClick={closeMenu} aria-label="RBXLift home">
+          <span className="nav-symbol" aria-hidden="true">R</span>
+          <span>RBXLift</span>
         </a>
         
         <button 
@@ -31,19 +32,18 @@ const Navbar = () => {
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <a href="#home" className="nav-link" onClick={closeMenu}>
-              Home
+            <a href="#launch" className="nav-link" onClick={closeMenu}>
+              Launch info
             </a>
           </li>
           <li className="nav-item">
-            <a 
-              href="https://discord.gg/robloxlift" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="nav-link"
-              onClick={closeMenu}
-            >
-              Discord
+            <a href="#faq" className="nav-link" onClick={closeMenu}>
+              FAQ
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#community" className="nav-link" onClick={closeMenu}>
+              Community
             </a>
           </li>
           <li className="nav-item">
@@ -54,7 +54,7 @@ const Navbar = () => {
               className="nav-button"
               onClick={closeMenu}
             >
-              Join Discord
+              Join Discord <span aria-hidden="true">↗</span>
             </a>
           </li>
         </ul>

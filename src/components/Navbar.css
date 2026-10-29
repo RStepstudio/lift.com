@@ -1,6 +1,7 @@
 .navbar {
-  background-color: var(--bg-secondary);
-  border-bottom: 1px solid var(--border-color);
+  background: rgba(240, 243, 237, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -8,28 +9,43 @@
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 70px;
+  min-height: 76px;
 }
 
 .nav-logo {
-  color: var(--text-primary);
+  color: var(--ink);
   text-decoration: none;
-  font-size: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 1.12rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.nav-symbol {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  aspect-ratio: 1;
+  border-radius: 2px;
+  color: var(--dark);
+  background: var(--acid);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
 }
 
 .nav-toggle {
   display: none;
   background: none;
   border: none;
-  color: var(--text-primary);
+  color: var(--ink);
   cursor: pointer;
   padding: 0.5rem;
 }
@@ -38,7 +54,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 2rem;
+  gap: 2.15rem;
 }
 
 .nav-item {
@@ -47,36 +63,39 @@
 }
 
 .nav-link {
-  color: var(--text-secondary);
+  color: var(--muted);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: color 180ms ease;
 }
 
 .nav-link:hover {
-  color: var(--text-primary);
+  color: var(--ink);
 }
 
 .nav-button {
-  background-color: var(--discord);
-  color: white;
+  background-color: var(--dark);
+  color: var(--white);
   text-decoration: none;
-  padding: 0.5rem 1.25rem;
-  border-radius: 6px;
-  font-size: 0.95rem;
+  padding: 0.68rem 1rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
   font-weight: 600;
-  transition: background-color 0.2s ease;
-  display: inline-block;
+  transition: color 180ms ease, background-color 180ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
 }
 
 .nav-button:hover {
-  background-color: var(--discord-hover);
+  background-color: var(--coral);
+  color: var(--dark);
 }
 
 @media (max-width: 768px) {
   .nav-container {
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
   }
 
   .nav-toggle {
@@ -86,11 +105,11 @@
   .nav-menu {
     position: absolute;
     left: 0;
-    top: 70px;
+    top: 76px;
     flex-direction: column;
     width: 100%;
-    background-color: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-color);
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
     gap: 0;
     display: none;
   }
@@ -101,18 +120,24 @@
 
   .nav-item {
     width: 100%;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--line);
   }
 
   .nav-link {
-    padding: 1rem 1.5rem;
+    padding: 0.9rem 1.25rem;
     width: 100%;
     display: block;
   }
 
   .nav-button {
-    margin: 1rem 1.5rem;
+    margin: 0.85rem 1.25rem 1rem;
     width: calc(100% - 3rem);
     text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-container {
+    padding: 0 1rem;
   }
 }
