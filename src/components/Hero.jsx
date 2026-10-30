@@ -8,9 +8,9 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <p className="eyebrow"><span className="eyebrow-mark" /> Official Roblox experience</p>
-          <h1 className="hero-title">RBX<span>Lift</span></h1>
+          <h1 className="hero-title">Lift</h1>
           <p className="hero-subtitle">Your next stop starts here.</p>
-          <p className="hero-description">Follow the official community for verified release news and updates from the RBXLift team.</p>
+          <p className="hero-description">Follow the official community for verified release news and updates from the Lift team.</p>
           <div className="hero-buttons">
             <a
               href="https://discord.gg/robloxlift"
@@ -24,8 +24,8 @@ const Hero = () => {
           </div>
           <p className="hero-note"><span className="status-dot" /> Launch announcements are shared on Discord</p>
         </div>
-        <div className="hero-art" aria-label="RBXLift launch status graphic" role="img">
-          <div className="art-topline"><span>RBXLIFT / OFFICIAL</span><span>NO. 001</span></div>
+        <div className="hero-art" aria-label="Lift launch status graphic" role="img">
+          <div className="art-topline"><span>LIFT / OFFICIAL</span><span>NO. 001</span></div>
           <div className="lift-frame">
             <div className="lift-door lift-door-left" />
             <div className="lift-door lift-door-right" />

@@ -2,8 +2,8 @@
   position: relative;
   padding: 5.7rem 2.25rem 5.2rem;
   overflow: hidden;
-  background: linear-gradient(118deg, rgba(215, 243, 106, 0.2), transparent 49%),
-    linear-gradient(180deg, rgba(251, 252, 248, 0.58), rgba(240, 243, 237, 0.05));
+  background: linear-gradient(118deg, var(--hero-wash), transparent 49%),
+    linear-gradient(180deg, var(--surface), var(--paper));
   border-bottom: 1px solid var(--line);
 }
 
@@ -94,10 +94,10 @@
   gap: 0.65rem;
   min-height: 48px;
   padding: 0.72rem 1.1rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--button-bg);
   border-radius: 3px;
-  background: var(--dark);
-  color: var(--white);
+  background: var(--button-bg);
+  color: var(--button-text);
   font-family: inherit;
   font-size: 0.9rem;
   font-weight: 700;
@@ -110,7 +110,7 @@
   transform: translateY(-2px);
   border-color: var(--acid);
   background: var(--acid);
-  color: var(--dark);
+  color: #101714;
 }
 
 .hero-text-link,

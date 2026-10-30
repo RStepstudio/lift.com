@@ -15,7 +15,7 @@ const CommunitySection = () => {
           One place for real updates, launch news, and the people waiting for the next stop.
         </p>
         <a href="https://discord.gg/robloxlift" target="_blank" rel="noopener noreferrer" className="community-button">
-          Join RBXLift on Discord <ArrowUpRight size={18} aria-hidden="true" />
+          Join Lift on Discord <ArrowUpRight size={18} aria-hidden="true" />
         </a>
         <span className="community-url">discord.gg/robloxlift</span>
       </div>

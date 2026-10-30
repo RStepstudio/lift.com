@@ -37,6 +37,15 @@
   transition: color 180ms ease;
 }
 
+.footer-link-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
 .footer-link:hover {
   color: var(--acid);
 }

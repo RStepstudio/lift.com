@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="RBXLift is a Roblox experience. Find official release updates, launch information, and community news on the RBXLift Discord." />
+    <meta name="description" content="Lift is a Roblox experience. Find official release updates, launch information, and community news through the Lift community." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#101513" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="RBXLift" />
-    <meta property="og:title" content="RBXLift | Official Roblox Experience" />
-    <meta property="og:description" content="Follow RBXLift for official release updates, launch information, and community news." />
+    <meta property="og:site_name" content="Lift" />
+    <meta property="og:title" content="Lift | Official Roblox Experience" />
+    <meta property="og:description" content="Follow Lift for official release updates, launch information, and community news." />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="RBXLift | Official Roblox Experience" />
-    <meta name="twitter:description" content="Follow RBXLift for official release updates, launch information, and community news." />
-    <title>RBXLift | Official Roblox Experience &amp; Launch Updates</title>
+    <meta name="twitter:title" content="Lift | Official Roblox Experience" />
+    <meta name="twitter:description" content="Follow Lift for official release updates, launch information, and community news." />
+    <title>Lift | Official Roblox Experience &amp; Launch Updates</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -23,8 +23,8 @@
         "@graph": [
           {
             "@type": "VideoGame",
-            "name": "RBXLift",
-            "description": "RBXLift is a Roblox experience. Official release updates and launch information are shared on the RBXLift Discord.",
+            "name": "Lift",
+            "description": "Lift is a Roblox experience. Official release updates and launch information are shared on the Lift Discord.",
             "gamePlatform": "Roblox",
             "sameAs": "https://discord.gg/robloxlift",
             "inLanguage": "en"
@@ -35,10 +35,10 @@
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "What is RBXLift?",
+                "name": "What is Lift?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "RBXLift is a Roblox experience. Follow its official Discord for announcements from the team."
+                  "text": "Lift is a Roblox experience. Follow its official Discord for announcements from the team."
                 }
               },
               {
@@ -51,10 +51,10 @@
               },
               {
                 "@type": "Question",
-                "name": "Where will RBXLift be available?",
+                "name": "Where will Lift be available?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "RBXLift is being made for Roblox. Check the official community for access details."
+                  "text": "Lift is being made for Roblox. Check the official community for access details."
                 }
               }
             ]
@@ -66,11 +66,18 @@
   <body>
     <div id="root">
       <main>
-        <h1>RBXLift</h1>
-        <p>RBXLift is a Roblox experience. Follow the official Discord for release timing, launch announcements, and game access updates.</p>
-        <p><a href="https://discord.gg/robloxlift">RBXLift official Discord</a></p>
+        <h1>Lift</h1>
+        <p>Lift is a Roblox experience. Follow the official Discord for release timing, launch announcements, and game access updates.</p>
+        <p><a href="https://discord.gg/robloxlift">Lift official Discord</a></p>
       </main>
     </div>
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem('lift-theme') || 'light'
+      } catch {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

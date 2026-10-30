@@ -9,14 +9,32 @@
 
   --paper: #f0f3ed;
   --white: #fbfcf8;
+  --surface: #fbfcf8;
   --ink: #17201c;
   --muted: #65716a;
   --line: #d7ded6;
   --dark: #101714;
   --dark-line: #344139;
+  --button-bg: #101714;
+  --button-text: #fbfcf8;
   --acid: #d7f36a;
   --coral: #f0785d;
+  --nav-glass: rgba(240, 243, 237, 0.94);
+  --hero-wash: rgba(215, 243, 106, 0.2);
   --font-display: 'Space Grotesk', sans-serif;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #111712;
+  --surface: #19221b;
+  --ink: #edf2e8;
+  --muted: #a7b3a8;
+  --line: #354137;
+  --button-bg: #d7f36a;
+  --button-text: #111712;
+  --nav-glass: rgba(17, 23, 18, 0.94);
+  --hero-wash: rgba(215, 243, 106, 0.06);
 }
 
 * {
@@ -34,7 +52,7 @@ body {
   min-width: 320px;
   margin: 0;
   background-color: var(--paper);
-  background-image: linear-gradient(115deg, rgba(215, 243, 106, 0.11), transparent 34%),
+  background-image: linear-gradient(115deg, var(--hero-wash), transparent 34%),
     repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(23, 32, 28, 0.025) 80px);
   color: var(--ink);
   line-height: 1.6;
